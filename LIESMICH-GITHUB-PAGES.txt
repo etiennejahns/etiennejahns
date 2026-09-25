@@ -1,0 +1,17 @@
+Website etiennejahns.de auf GitHub Pages veroeffentlichen
+=========================================================
+1. Auf github.com ein neues Repository anlegen (z. B. "etiennejahns.de", oeffentlich).
+2. Den GESAMTEN Inhalt dieses Ordners hochladen (auch die Dateien CNAME und .nojekyll)
+   - "Add file" -> "Upload files", Ordner hineinziehen, "Commit changes".
+3. Settings -> Pages -> Source: "Deploy from a branch", Branch: main, Ordner: / (root) -> Save.
+4. Unter "Custom domain" steht etiennejahns.de (kommt aus der CNAME-Datei). Nach der DNS-Pruefung
+   "Enforce HTTPS" aktivieren.
+5. DNS bei Strato (Domainverwaltung -> DNS-Einstellungen):
+   A-Records fuer etiennejahns.de:
+     185.199.108.153
+     185.199.109.153
+     185.199.110.153
+     185.199.111.153
+   CNAME fuer www:  <dein-github-benutzername>.github.io
+   Die Umstellung kann bis zu 24 Stunden dauern.
+Kein npm, kein Build noetig - alles ist fertig.
